@@ -16,3 +16,17 @@ class BirthDay {
 }
 
 //ui logic
+$(document).ready(function () {
+  $("#userinput").submit(function (event) {
+    event.preventDefault()
+
+    var myDate = $("#date").val();
+    var myMonth = $("#month").val();
+    var myYear = $("#year").val();
+    var myCentury = $("#century").val();
+    var myGender = $("#gender").val();
+
+    let newName = new BirthDay(myCentury, myYear, myMonth, myDate)
+   
+  })
+})
