@@ -27,6 +27,15 @@ $(document).ready(function () {
     var myGender = $("#gender").val();
 
     let newName = new BirthDay(myCentury, myYear, myMonth, myDate)
-   
+    if (myDate >= 1 && myDate <= 31 && myCentury <= 20 && myYear <= 99 && myMonth >= 1 && myMonth <= 12) {
+      if (myGender === "male") {
+        alert("Your Akan name is " + maleName[newName.findDay()]);
+      } else if (gender === "female") {
+        alert("Your Akan name is " + femaleName[newName.findDay()]);
+      }
+    } else {
+      return false;
+    }
+
   })
 })
