@@ -1,0 +1,9 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+.jumbotron {
+  background: url(../images/flag.png);
+  background-size: contain;
+  font-weight: bolder;
+  text-align: center;
+}

@@ -5,28 +5,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="jquery-3.4.1.js"></script>
+  <script src="verify.js"></script>
   <script src="scripts.js"></script>
   <title>AKAN</title>
 </head>
 
 <body>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1>Akan Names</h1>
+      <p>A traditional Naming System</p>
+    </div>
+  </div>
   <div class="container">
+
     <div class="row">
       <div class="col-md-8">
-
+        <p>In Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they
+          were born.
+          This is known as the Akan naming system. There are different names for each gender.This magical place
+          determines your
+          Akan name by letting you fill up a form with your birthday details. <strong>Wanna try it out</strong>?</p>
+          <img class="img-fluid" src="images/ghana.jpg" alt="Ghanaian kids">
       </div>
       <div class="col-md-4">
         <form id="userinput">
           <p>Enter the first two numbers of your birth year:</p>
-          <input id="century" class="form-control" type="number" placeholder="cc">
+          <input id="century" class="form-control" type="number" placeholder="cc" min="1" max="20"><br>
           <p>Enter the second two numbers of your birth year:</p>
-          <input id="year" class="form-control" type="number" placeholder="yy">
+          <input id="year" class="form-control" type="number" placeholder="yy" min="1" max="99">
           <p>Enter the month you were born:</p>
-          <input id="month" class="form-control" type="number" placeholder="mm">
+          <input id="month" class="form-control" type="number" placeholder="mm" min="1" max="12">
           <p>enter your birth date:</p>
-          <input id="date" class="form-control" type="number" placeholder="dd">
+          <input id="date" class="form-control" type="number" placeholder="dd" min="1" max="31">
           <br>
           <p>gender</p>
           <select class="form-control" id="gender">
@@ -35,7 +50,7 @@
           </select>
           <br>
           now press here:
-          <input type="button" class="btn btn-danger" value="submit" onclick="check();">
+          <input id="submit" type="submit" class="btn btn-danger" value="submit" onclick="check()"><br><br>
         </form>
       </div>
     </div>
