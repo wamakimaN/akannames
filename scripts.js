@@ -28,7 +28,7 @@ $(document).ready(function () {
     var myGender = $("#gender").val();
 
     let newName = new BirthDay(myCentury, myYear, myMonth, myDate)
-    if (myDate >= 1 && myDate <= 31 && myCentury <= 20 && myYear <= 99 && myYear > 0 && myMonth >= 1 && myMonth <= 12) {
+    if (myDate > 0 && myDate <= 31 && myCentury <= 20 && myCentury > 0 && myYear <= 99 && myYear > 0 && myMonth >= 1 && myMonth <= 12) {
       if (myGender === "male") {
         $("#showresults").show();
         $("#showerror").hide();
@@ -43,9 +43,7 @@ $(document).ready(function () {
       $("#showerror").show()
       $("#showresults").hide()
       $("#showerror").html("enter required feilds correctly");
-      preventDefault(event)
-
+      return false;
     }
-
   })
 })
