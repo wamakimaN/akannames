@@ -8,5 +8,16 @@ body{
   text-align: center;
 }
 #showresults{
-  color: brown;
+  display: none;
+  color: beige;
+  background-color: royalblue;
+  padding: 5px;
+  border-radius: 8px;
+}
+#showerror{
+  display: none;
+  color: rgb(241, 66, 12);
+  border:solid rgb(241, 66, 12);
+  padding: 5px;
+  border-radius: 8px;
 }
